@@ -14,8 +14,16 @@ $.getJSON(url, function(data) {
     $.each(data, function(index, element) {
         if (index == 2) {
             var datas = element.toString().split(',');
-            $('#dumpjson').append($('<p>', {
-                    text: datas[1]
+            $('#plasmaDensity').append($('<p>', {
+                    text: "Density: " + datas[1]
+                }
+            ))
+            $('#plasmaSpeed').append($('<p>', {
+                    text: "Speed: " + datas[2]
+                }
+            ))
+            $('#plasmaTemperature').append($('<p>', {
+                    text: "Temperature: " + datas[3]
                 }
             ))
         };
