@@ -12,8 +12,12 @@ var url = 'http://services.swpc.noaa.gov/products/solar-wind/plasma-5-minute.jso
 // http://stackoverflow.com/questions/8951810/how-to-parse-json-data-with-jquery-javascript
 $.getJSON(url, function(data) {
     $.each(data, function(index, element) {
-        $('#dumpjson').append($('<p>', {
-            text: element
-        }));
+        if (index == 2) {
+            var datas = element.toString().split(',');
+            $('#dumpjson').append($('<p>', {
+                    text: datas[1]
+                }
+            ))
+        };
     });
 });
