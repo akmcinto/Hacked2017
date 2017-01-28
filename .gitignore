@@ -1,0 +1,8 @@
+# Node Dependencies
+node_modules/
+
+#Intellij
+*.iml
+*.ipr
+*.iws
+.idea
