@@ -1,0 +1,16 @@
+{
+  "name": "Hacked2017",
+  "title": "Hacked2017",
+  "version": "1.0.0",
+  "description": "SpaceWatch Program",
+  "dependencies": {
+    "fs": "0.0.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akmcinto/Hacked2017.git"
+  }
+}
