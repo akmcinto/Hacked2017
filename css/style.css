@@ -72,6 +72,11 @@ h1, header a {
     border-radius: 5px;
 }
 
+.content > img {
+    object-fit: contain;
+    width:95%;
+}
+
 .content .title{
     font-size:20px;
 }
