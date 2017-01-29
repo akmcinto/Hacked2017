@@ -3,73 +3,106 @@
  */
 
 //not sure where to put this
-var sun_information = "This is the sun information!";
-var mercury_information = "This is mercury information!";
-var earth_information = "This is earth information!";
-var venus_information = "This is venus!";
-var mars_information = "Mars!";
-var jupitar_information = "Jupitar!";
-var saturn_information = "Saturn!";
-var uranus_information = "Uranus!";
-var neptune_information = "Neptune!";
-var pluto_information = "Pluto!";
+var sun_information = "<p> <font color='white'>This is the sun information! </p>";
+var mercury_information = "<p> <font color='white'>This is mercury information!</p>";
+var earth_information = "<p> <font color ='white'>This is earth information!</p>";
+var venus_information = "<p> <font color='white'>This is venus!</p>";
+var mars_information = "<p><font color='white'>Mars!</p>";
+var jupitar_information = "<p><font color='white'>Jupitar!</p>";
+var saturn_information = "<p><font color='white'>Saturn!</p>";
+var uranus_information = "<p><font color='white'>Uranus!</p>";
+var neptune_information = "<p><font color='white'>Neptune!</p>";
+var pluto_information = "<p><font color='white'>Pluto!</p>";
 
-function sunClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = sun_information;
-}
+$(document).ready(function() {
+    $("#sun").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = sun_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function mercuryClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = mercury_information;
-}
+    $("#mercury").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = mercury_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function earthClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = earth_information;
-}
+    $("#earth").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = earth_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function venusClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = venus_information;
-}
+    $("#venus").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = venus_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function marsClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = mars_information;
-}
+    $("#mars").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = mars_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function jupitarClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = jupitar_information;
-}
+    $("#jupitar").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = jupitar_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function saturnClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = saturn_information;
-}
+    $("#saturn").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = saturn_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function uranusClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = uranus_information;
-}
+    $("#uranus").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = uranus_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function neptuneClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = neptune_information;
-}
+    $("#neptune").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = neptune_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
 
-function plutoClicked(){
-    var textBox = document.getElementById("textBox");
-    textBox.style.visibility='visible';
-    textBox.innerHTML = pluto_information;
-}
+    $("#pluto").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = pluto_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
+
+});

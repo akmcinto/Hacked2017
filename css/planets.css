@@ -1,21 +1,25 @@
+#planets{
+    margin-left: 500px;
+}
+
 #sun {
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    background: red;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #ffca25;
     cursor: pointer;
     display:inline-block;
 }
 
 #mercury {
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    background: #ffefb7;
+    width: 25px;
+    height: 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #fff7b1;
     cursor: pointer;
     display:inline-block;
 }
@@ -26,7 +30,7 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background: #65e2ff;
+    background: #ffd566;
     cursor: pointer;
     display:inline-block;
 }
@@ -37,19 +41,19 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background: red;
+    background: #6cd758;
     cursor: pointer;
     display:inline-block;
 }
 
 
 #mars {
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    background: red;
+    width: 25px;
+    height: 25px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #c00000;
     cursor: pointer;
     display:inline-block;
 }
@@ -60,7 +64,7 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background: red;
+    background: #fff1df;
     cursor: pointer;
     display:inline-block;
 }
@@ -71,7 +75,7 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background: red;
+    background: #e0c279;
     cursor: pointer;
     display:inline-block;
 }
@@ -84,7 +88,7 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background: red;
+    background: #79e8e1;
     cursor: pointer;
     display:inline-block;
 }
@@ -95,26 +99,29 @@
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background: red;
+    background: #6a9fff;
     cursor: pointer;
     display:inline-block;
 }
 
 #pluto {
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    background: red;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #eef2ff;
     cursor: pointer;
     display:inline-block;
 }
 
 #textBox{
-    width: 300px;
-    border: 25px solid green;
-    padding: 25px;
+    width: 80%;
+    border: 5px solid #dff8ff;
+    padding: 70px;
     margin: 25px;
-    visibility:hidden;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
 }
