@@ -104,6 +104,11 @@ td {
     font-size: 24px;
 }
 
+.about-text{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
 #solar-wind{
     background: url("https://svs.gsfc.nasa.gov/vis/a000000/a004300/a004370/Mars_vs_Solar_Storm_print.jpg") center no-repeat;
     background-size: cover;
