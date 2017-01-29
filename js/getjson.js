@@ -54,6 +54,7 @@ $.getJSON(plasmaurl, function(data) {
     });
 });
 
+// http://stackoverflow.com/questions/10112509/reading-a-text-file-with-jquery
 $.get(solarforecasturl, function(data) {
     var startB = data.search('B. NOAA Solar Radiation Activity Observation and Forecast')
     var startC = data.search('C. NOAA Radio Blackout Activity and Forecast');
@@ -62,6 +63,20 @@ $.get(solarforecasturl, function(data) {
     var datasB = dataB.split('\n\n');
 
     $('#solarForecastTitle1').text(datasB[0]);
+
+    $('#solarWindInfo2').append($('<p>', {
+            text: datasB[1]
+        }
+    ));
+    $('#solarWindInfo2').append($('<p>', {
+            text: datasB[2]
+        }
+    ));
+
+    var sOut = '<table style="padding:10px; width:90%">';
+    sOut += '<thead><tr><td> </td><td>' + datasB[3].substr(14, 6) + '</td><td>' + datasB[3].substr(22, 6) + '</td><td>' + datasB[3].substr(30, 6) + '</td></tr></thead>';
+    sOut += '<tbody><tr><td>' + datasB[3].substr(37, 13) + '</td><td>' + datasB[3].substr(52, 6) + '</td><td>' + datasB[3].substr(60, 6) + '</td><td>' + datasB[3].substr(68, 6) + '</td></tr></tbody></table>';
+    $('#solarWindInfo2').append(sOut);
 
     // for (d in datasB) {
     //     $('#solarWindInfo2').append($('<p>', {

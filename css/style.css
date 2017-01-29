@@ -77,6 +77,10 @@ h1, header a {
     width:95%;
 }
 
+.doublewide {
+    width: 60% !important;
+}
+
 .content .title{
     font-size:20px;
 }
