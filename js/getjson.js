@@ -49,7 +49,7 @@ $.getJSON(plasmaurl, function(data) {
 
     $.each(data, function(index, element) {
         if (index == 2) {
-            var datas = element.toString().split('');
+            var datas = element.toString().split(',');
             $('#solarWindInfo1').html($('<p>', {
                     text: "Density: " + datas[1] + " /cm^3"
                 }
