@@ -1,5 +1,7 @@
 var plasmaurl = 'http://services.swpc.noaa.gov/products/solar-wind/plasma-5-minute.json';
 var alertsurl = 'http://services.swpc.noaa.gov/products/alerts.json';
+var auroraanimationurl_north = 'http://services.swpc.noaa.gov/experimental/products/animations/auroral-forecast-north.json';
+var solarforecasturl = 'http://services.swpc.noaa.gov/text/3-day-forecast.txt';
 
 $.getJSON(alertsurl, function(data) {
     $.each(data, function(index, element) {
@@ -37,19 +39,43 @@ $.getJSON(alertsurl, function(data) {
 $.getJSON(plasmaurl, function(data) {
     $.each(data, function(index, element) {
         if (index == 2) {
-            var datas = element.toString().split(',');
+            var datas = element.toString().split('');
             $('#solarWindInfo1').html($('<p>', {
-                    text: "Density: " + datas[1]
+                    text: "Density: " + datas[1] + " /cm^3"
                 }
             )).append($('<p>', {
-                    text: "Speed: " + datas[2]
+                    text: "Speed: " + datas[2] + " km/s"
                 }
             )).append($('<p>', {
-                    text: "Temperature: " + datas[3]
+                    text: "Temperature: " + datas[3] + " K"
                 }
             ))
         };
     });
 });
+
+$.get(solarforecasturl, function(data) {
+    // $('#solarWindInfo2').text(data)
+    // var datas = data.split('  ');
+    // $('#solarWindInfo2').text(data.search('B. NOAA Solar Radiation Activity Observation and Forecast'))
+    // for (var d in datas) {
+    //     // if (datas[d] == 'B. NOAA Solar Radiation Activity Observation and Forecast') {
+    //         $('#solarWindInfo2').append(datas[d] + '\n')
+    //     // }
+    // }
+    var startB = data.search('B. NOAA Solar Radiation Activity Observation and Forecast')
+    var startC = data.search('C. NOAA Radio Blackout Activity and Forecast');
+    $('#solarWindInfo2').text(data.substr(startB, startC - 1));
+}, 'text');
+
+// // http://stackoverflow.com/questions/9669805/how-do-i-animate-though-a-png-sequence-using-jquery-either-by-scrolling-or-trig
+// $.getJSON(auroraanimationurl_north, function(data) {
+//     $.each(data, function(index, element) {
+//         var datas = JSON.parse(JSON.stringify(element))["url"];
+//         setInterval(function () {
+//             $('#aurora-animation').attr('src', 'http://services.swpc.noaa.gov/experimental' + datas);
+//         }, 10);
+//     });
+// });
 
 $('#solarWindInfo2').html("asdsaddsadsad");
