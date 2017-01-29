@@ -27,3 +27,4 @@ Constellation maps from: http://lunaf.com/space/sky-map/
 Current moon phase image from: http://api.usno.navy.mil/imagery/moon.png?&ID=AA-URL
 style.css built off of: https://www.airpair.com/angularjs
 index.html starry background in style.css: http://lea.verou.me/css3patterns/#starry-night
+Planets starry sky imageDesigned by Kjpargeter - Freepik.com
