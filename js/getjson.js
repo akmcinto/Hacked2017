@@ -3,13 +3,20 @@ var alertsurl = 'http://services.swpc.noaa.gov/products/alerts.json';
 var auroraanimationurl_north = 'http://services.swpc.noaa.gov/experimental/products/animations/auroral-forecast-north.json';
 var solarforecasturl = 'http://services.swpc.noaa.gov/text/3-day-forecast.txt';
 
+function unload(idtext) {
+    var loader = idtext + '-loader'
+
+    $(loader).hide();
+    $(idtext).show();
+}
+
 $.getJSON(alertsurl, function(data) {
     $.each(data, function(index, element) {
 
         var datas = JSON.parse(JSON.stringify(element))["message"].split('\n\r');
-        var idname = "alert" + index;
+        var idname = "alerts" + index;
         // http://stackoverflow.com/questions/11905276/using-variables-in-place-of-id-names-in-jquery
-        $('#alerts').append("<div id='"+idname+"' class='content'></div>");
+        $('#alerts-content').append("<div id='"+idname+"' class='content'></div>");
         for (var d in datas)
         {
             if (d == 0) {
@@ -33,10 +40,12 @@ $.getJSON(alertsurl, function(data) {
             return false;
         }
     });
+    unload('#alerts-content');
 });
 
 // http://stackoverflow.com/questions/8951810/how-to-parse-json-data-with-jquery-javascript
 $.getJSON(plasmaurl, function(data) {
+
     $.each(data, function(index, element) {
         if (index == 2) {
             var datas = element.toString().split('');
@@ -52,6 +61,9 @@ $.getJSON(plasmaurl, function(data) {
             ))
         };
     });
+
+    unload('#solarWindInfo1');
+
 });
 
 // http://stackoverflow.com/questions/10112509/reading-a-text-file-with-jquery
@@ -97,3 +109,5 @@ $.get(solarforecasturl, function(data) {
 // });
 
 $('#solarWindInfo2').html("asdsaddsadsad");
+
+

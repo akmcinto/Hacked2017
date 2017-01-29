@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Script Tutorials" />
-    <title>Responsive website using AngularJS | Script Tutorials</title>
+    <title>Not a Bore</title>
     <meta name="description" content="Responsive website using AngularJS - demo page">
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -30,7 +30,7 @@
 <header>
     <div class="wrap">
         <!-- logo -->
-        <a href="#!" id="home-link">Not a bore-alis</a>
+        <a href="#!" id="home-link">Not A Bore-alis</a>
         <!-- navigation menu -->
         <nav>
             <ul>
@@ -45,13 +45,14 @@
 <div class="main">
 
     <div class="row topic" id="solar-wind">
-        <div class="title title-row row">
-            <h2>Solar Winds</h2>
+        <div class="title-row row">
+            <h2 class="title">Solar Winds</h2>
         </div>
         <div class="content-row row">
             <div class="content">
                 <p class="title">Solar Wind Info</p>
-                <p id="solarWindInfo1">this is info</p>
+                <div class="loader" id="solarWindInfo1-loader"></div>
+                <p id="solarWindInfo1" style="display: none;"></p>
             </div>
             <div class="content doublewide">
                 <p class="title" id="solarForecastTitle1">Solar Wind Info</p>
@@ -80,11 +81,17 @@
         </div>
     </div>
 
-    <div id="alerts" class="content-row row"></div>
+    <div class="row topic" id="alerts">
+        <div class="title title-row row">
+            <h2 class="title">!!Alerts!!</h2>
+            <div class="loader" id="alerts-content-loader"></div>
+        </div>
+        <div id="alerts-content" class="content-row row" style="display: none;"></div>
+    </div>
 
     <div class="row topic" id="moon">
         <div class="title title-row row">
-            <h2>Moon</h2>
+            <h2 class="title">Moon</h2>
         </div>
         <div class="content-row row">
             <div class="content">
@@ -99,8 +106,5 @@
         </div>
     </div>
 </div>
-
-<script src="../js/solar.js"></script>
-
 </body>
 </html>
