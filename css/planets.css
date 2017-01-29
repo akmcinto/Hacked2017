@@ -1,0 +1,110 @@
+#sun {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    cursor: pointer;
+    display:inline-block;
+}
+
+#mercury {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: #ffefb7;
+    cursor: pointer;
+    display:inline-block;
+}
+
+#venus {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: #65e2ff;
+    cursor: pointer;
+    display:inline-block;
+}
+
+#earth {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    cursor: pointer;
+    display:inline-block;
+}
+
+
+#mars {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    cursor: pointer;
+    display:inline-block;
+}
+
+#jupitar {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    cursor: pointer;
+    display:inline-block;
+}
+
+#saturn {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    cursor: pointer;
+    display:inline-block;
+}
+
+#uranus {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    cursor: pointer;
+    display:inline-block;
+}
+
+#neptune {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    cursor: pointer;
+    display:inline-block;
+}
+
+#pluto {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    cursor: pointer;
+    display:inline-block;
+}

@@ -17,6 +17,7 @@
     <script src="../js/angular.min.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/controllers.js"></script>
+    <script src="../js/getjson.js"></script>
 </head>
 <body>
     <header>
@@ -54,6 +55,12 @@
             </div>
             <div ng-show="success"><p>Your message has been sent, thank you.</p></div>
         </div>
+    </div>
+
+    <div id="plasmaData" class="plasma">
+        <div id="plasmaDensity"></div>
+        <div id="plasmaSpeed"></div>
+        <div id="plasmaTemperature"></div>
     </div>
 
     <div id="windData">Solar Winds</div>
