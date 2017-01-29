@@ -68,6 +68,11 @@ h1, header a {
     margin-left: 250px;
 }
 
+/*
+Movement code written by
+pangloss (http://stackoverflow.com/users/483779/pangloss) on
+StackOverFlow(http://stackoverflow.com/questions/35990445/how-to-move-a-div-up-and-down-infinitely-in-css3)
+ */
 @-webkit-keyframes MoveUpDown {
     0% {
         bottom: -75px;
@@ -107,7 +112,11 @@ h1, header a {
     position: relative;
 
 }
-
+/*
+Circle code written by:
+ryanoshea (http://stackoverflow.com/users/859085/ryanoshea)
+on StackOverflow (http://stackoverflow.com/questions/6921792/how-to-draw-circle-in-html-page)
+ */
 #sun {
     width: 600px;
     height: 600px;
