@@ -105,10 +105,9 @@ td {
     width:95%;
 }
 
-.doublewide {
-    width: 60% !important;
+.wider {
+    width: 45% !important;
 }
-
 .content .title{
     font-size: 24px;
 }
