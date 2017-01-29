@@ -30,7 +30,7 @@
 <header>
     <div class="wrap">
         <!-- logo -->
-        <a href="#!" id="home-link">Not a bore-alis</a>
+        <a href="#!" id="home-link">Not A Bore-alis</a>
         <!-- navigation menu -->
         <nav>
             <ul>
@@ -44,13 +44,14 @@
 </header>
 <div class="main">
     <div class="row topic" id="solar-wind">
-        <div class="title title-row row">
-            <h2>Solar Winds</h2>
+        <div class="title-row row">
+            <h2 class="title">Solar Winds</h2>
         </div>
         <div class="content-row row">
             <div class="content">
                 <p class="title">Solar Wind Info</p>
-                <p id="solarWindInfo1">this is info</p>
+                <div class="loader"></div>
+                <p id="solarWindInfo1" style="display: none;">this is info</p>
             </div>
             <div class="content">
                 <p class="title">Solar Wind Info</p>
@@ -66,11 +67,15 @@
         <div id="plasmaTemperature"></div>
     </div>
 
-    <div id="alerts" class="content-row row"></div>
-
+    <div class="row topic" id="alerts">
+        <div class="title title-row row">
+            <h2 class="title">!!Alerts!!</h2>
+        </div>
+        <div id="alerts-content" class="content-row row"></div>
+    </div>
     <div class="row topic" id="moon">
         <div class="title title-row row">
-            <h2>Moon</h2>
+            <h2 class="title">Moon</h2>
         </div>
         <div class="content-row row">
             <div class="content">
@@ -85,9 +90,5 @@
         </div>
     </div>
 </div>
-
-<script src="../js/getjson.js"></script>
-<script src="../js/solar.js"></script>
-
 </body>
 </html>

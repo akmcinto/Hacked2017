@@ -5,9 +5,9 @@ $.getJSON(alertsurl, function(data) {
     $.each(data, function(index, element) {
 
         var datas = JSON.parse(JSON.stringify(element))["message"].split('\n\r');
-        var idname = "alert" + index;
+        var idname = "alerts" + index;
         // http://stackoverflow.com/questions/11905276/using-variables-in-place-of-id-names-in-jquery
-        $('#alerts').append("<div id='"+idname+"' class='content'></div>");
+        $('#alerts-content').append("<div id='"+idname+"' class='content'></div>");
         for (var d in datas)
         {
             if (d == 0) {
@@ -35,6 +35,7 @@ $.getJSON(alertsurl, function(data) {
 
 // http://stackoverflow.com/questions/8951810/how-to-parse-json-data-with-jquery-javascript
 $.getJSON(plasmaurl, function(data) {
+
     $.each(data, function(index, element) {
         if (index == 2) {
             var datas = element.toString().split(',');
@@ -50,6 +51,12 @@ $.getJSON(plasmaurl, function(data) {
             ))
         };
     });
+
+    $(".loader").hide();
+    $('#solarWindInfo1').show();
+
 });
+
+
 
 $('#solarWindInfo2').html("asdsaddsadsad");
