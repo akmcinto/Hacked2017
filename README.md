@@ -1,5 +1,5 @@
 # Hacked 2017
-Project: notaboreialis.net
+Project: notaborealis.net
 
 This website was created for the 2017 HackED hackathon.  Within 24 hours we 
 aimed to deploy a website that would provide data on space weather and other 
