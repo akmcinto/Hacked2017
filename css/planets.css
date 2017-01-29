@@ -1,7 +1,10 @@
 .planets{
     margin-left: 500px;
+}
 
-
+#title_text{
+    font-family: "Arial Black";
+    margin-left: 250px;
 }
 
 @keyframes MoveUpDown {
@@ -13,6 +16,18 @@
     }
     100% {
         bottom: 350px;
+    }
+}
+
+@keyframes MoveUpDownRing {
+    0% {
+        bottom: 300px;
+    }
+    50% {
+        bottom: 450px;
+    }
+    100% {
+        bottom: 300px;
     }
 }
 
@@ -187,16 +202,57 @@
 }
 
 #textBox{
-    width: 80%;
+    width: 70%;
     border: 5px solid #dff8ff;
-    padding: 70px;
+    padding: 20px;
     margin: 25px;
-    margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 400px;
+    margin-left: 400px;
+    margin-right: 0;
     display:none;
 }
 
 #background_planets{
     background-image: url(../images/stars.jpg);
+}
+
+#ring{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: transparent;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    cursor: pointer;
+
+    border: 15px solid #dd8b15;
+    z-index: 1;
+
+    animation: MoveUpDownRing 3s linear infinite;
+    position: absolute;
+    left: 955px;
+    bottom: 950px;
+    animation-delay: 1s;
+}
+
+#ring_uranus{
+    position: absolute;
+    width: 80px;
+    height: 150px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: transparent;
+    cursor: pointer;
+
+    border: 8px solid #f2fefc;
+    z-index: 1;
+
+    animation: MoveUpDownRing 3s linear infinite;
+    position: absolute;
+    left: 1150px;
+    bottom: 1150px;
 }
