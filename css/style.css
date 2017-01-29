@@ -91,6 +91,12 @@ h1, header a {
     background-size: cover;
 }
 
+#alerts{
+    background: url("../images/spaceinvaders.png") center no-repeat;
+    background-size: cover;
+
+}
+
 p {
     font-size:1.5em;
 }

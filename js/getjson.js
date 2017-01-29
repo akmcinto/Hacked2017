@@ -11,12 +11,12 @@ $.getJSON(alertsurl, function(data) {
         for (var d in datas)
         {
             if (d == 0) {
-                $('#' + idname).append($('<h2>', {
+                $('#' + idname).append($('<p>', {
                         text: datas[d]
                     }
                 ))
             } else if (d == 1) {
-                $('#' + idname).append($('<h1>', {
+                $('#' + idname).append($('<div class="title">', {
                         text: datas[d]
                     }
                 ))
