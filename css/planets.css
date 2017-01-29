@@ -68,7 +68,7 @@ h1, header a {
     margin-left: 250px;
 }
 
-@keyframes MoveUpDown {
+@-webkit-keyframes MoveUpDown {
     0% {
         bottom: -75px;
     }
@@ -80,7 +80,7 @@ h1, header a {
     }
 }
 
-@keyframes MoveUpDownRing {
+@-webkit-keyframes MoveUpDownRing {
     0% {
         bottom: 300px;
     }
@@ -141,6 +141,13 @@ h1, header a {
 
 }
 
+#mercury:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 #venus {
     width: 50px;
     height: 50px;
@@ -151,13 +158,18 @@ h1, header a {
     cursor: pointer;
     left: -200px;
 
-
-
     background: url("http://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1440/AW_Venus_nli6oy.jpg") center no-repeat;
     background-size: cover;
 
     animation: MoveUpDown 3s linear infinite;
     animation-delay: 1s;
+}
+
+#venus:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 #earth {
@@ -177,6 +189,12 @@ h1, header a {
     animation-delay: 2s;
 }
 
+#earth:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
 
 #mars {
     width: 25px;
@@ -193,6 +211,13 @@ h1, header a {
 
     animation: MoveUpDown 3s linear infinite;
 
+}
+
+#mars:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .hide{
@@ -216,12 +241,19 @@ h1, header a {
     animation-delay: 0.5s;
 }
 
+#jupitar:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 #saturn {
     width: 150px;
     height: 150px;
-    -webkit-border-radius: 75px;
-    -moz-border-radius: 75px;
-    border-radius: 75px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     background: #e0c279;
     cursor: pointer;
     left: 50px;
@@ -231,6 +263,13 @@ h1, header a {
 
     animation: MoveUpDown 3s linear infinite;
     animation-delay: 1s;
+}
+
+#saturn:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 #uranus {
@@ -250,6 +289,13 @@ h1, header a {
     animation: MoveUpDown 3s linear infinite;
 }
 
+#uranus:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 #neptune {
     width: 100px;
     height: 100px;
@@ -267,6 +313,13 @@ h1, header a {
     animation-delay: 2s;
 }
 
+#neptune:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 #pluto {
     width: 10px;
     height: 10px;
@@ -277,12 +330,18 @@ h1, header a {
     cursor: pointer;
     left: 250px;
 
-
     background: url("https://static01.nyt.com/newsgraphics/2016/07/14/pluto-one-year/assets/icon-pluto.png") center no-repeat;
     background-size: cover;
 
     animation: MoveUpDown 3s linear infinite;
     animation-delay: 3s;
+}
+
+#pluto:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 #textBox-row{
