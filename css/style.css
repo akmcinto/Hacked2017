@@ -100,6 +100,17 @@ td {
 .wider {
     width: 45% !important;
 }
+
+.ninth {
+    width: 30%;
+    float: left;
+    margin: 1.5%;
+}
+
+.ninth > img {
+    width:100%;
+}
+
 .content .title{
     font-size: 24px;
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="NotABorealais" />
+    <title>Not a Bore</title>
+    <meta name="description" content="Responsive website using AngularJS - demo page">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!---Bootstraps--->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+
+    <!-- add styles -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <!-- logo -->
+            <a href="index.html" id="home-link">Not A Bore-alis</a>
+            <!-- navigation menu -->
+            <nav>
+                <ul>
+                    <li><a id="planetBtn" href="../web/planets.html" ng-class="{activeSmall:part == 'privacy'}">Planets</a></li>
+                    <li><a id="constellationBtn" href="../web/constellations.html" ng-class="{activeSmall:part == 'constellation'}">Constellations</a></li>
+                    <li><a id="aboutBtn" href="../web/about.html" ng-class="{activeSmall:part == 'about'}">About</a></li>
+                    <li><a id="contactBtn" href="../web/contact.html" ng-class="{activeSmall:part == 'contact'}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <div class="ninth" id="NorthAmerica">
+            <p class="title">North America</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=UTC&size=600&lat=48.37&lon=-100" />
+        </div>
+        <div class="ninth" id="Europe">
+            <p class="title">Europe</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=G&size=600&lat=54.9&lon=25.32" />
+        </div>
+        <div class="ninth" id="Asia">
+            <p class="title">Asia</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=UTC&size=600&lat=43.68&lon=87.33" />
+        </div>
+
+        <div class="ninth" id="SouthAmerica">
+            <p class="title">South America</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=UTC&size=600&lat=-15.59&-lon=56.7" />
+        </div>
+        <div class="ninth" id="Africa">
+            <p class="title">Africa</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=UTC&size=600&lat=2.38&lon=16.06" />
+        </div>
+        <div class="ninth" id="Australia">
+            <p class="title">Australia</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=UTC&size=600&lat=-26.61&lon=134.35" />
+        </div>
+
+        <div class="ninth" id="Hawaii">
+            <p class="title">Hawaii</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=UTC&size=600&lat=21.1&lon=-157" />
+        </div>
+        <div class="ninth" id="NorthPole">
+            <p class="title">North Pole</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=UTC&size=600&lat=90&lon=0" />
+        </div>
+        <div class="ninth" id="SouthPole">
+            <p class="title">South Pole</p>
+            <img src="http://www.astrobot.eu/skymapserver/skymap?type=png&colorset=0&deco=16399&lang=en&timezone=UTC&size=600&lat=-90&lon=0" />
+        </div>
+
+    </div>
+</body>
+</html>
