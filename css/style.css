@@ -1,13 +1,4 @@
-﻿/* ============================================================================================== 
-This copyright notice must be kept untouched in the stylesheet at all times.
-The original version of this stylesheet and the associated (x)html 
-is available at http://www.script-tutorials.com/responsive-website-using-angularjs/
-Copyright (c) Script Tutorials. All rights reserved.
-This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
-================================================================================================= */
-
-/* general settings */
-html {
+﻿html {
     font-family: sans-serif;
     min-height:100%;
     overflow-x:hidden;
@@ -15,6 +6,7 @@ html {
     position:relative;
     width:100%;
 }
+
 body {
     background-color:#000010;
     color:#FFF;
@@ -23,12 +15,11 @@ body {
     min-height:100%;
     width:100%;
 
-    #background-color:black;
     background-image:
-            radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-            radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-            radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-            radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+            radial-gradient(white, rgba(255,255,255,.2) 2px,   transparent 40px),
+            radial-gradient(white, rgba(255,255,255,.15) 1px,   transparent 30px),
+            radial-gradient(white, rgba(255,255,255,.1) 2px,   transparent 40px),
+            radial-gradient(rgba(255,255,255,.4),       rgba(255,255,255,.1) 2px, transparent 30px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
@@ -37,7 +28,11 @@ a img {
     border:none;
 }
 
-header a{
+#home-link:hover{
+    text-decoration:none;
+}
+
+header a, #home-link:hover{
     text-decoration:none;
     color: #fff;
 }
@@ -94,6 +89,12 @@ h1, header a {
 #moon{
     background:url("https://i.ytimg.com/vi/23NPIQZQkF0/maxresdefault.jpg") center no-repeat;
     background-size: cover;
+}
+
+#alerts{
+    background: url("../images/spaceinvaders.png") center no-repeat;
+    background-size: cover;
+
 }
 
 p {
@@ -184,13 +185,16 @@ header nav ul li a {
 header nav ul li a.active {
     background-color:#820082;
     color:#fff;
+    text-decoration:none;
 }
 header nav ul li a.active:hover {
-    background-color:#FF1F59;
+    background-color:#820082;
     color:#fff;
+    text-decoration:none;
 }
 header nav ul li a:hover,header nav ul li a.activeSmall {
     color:#FF1F59;
+    text-decoration:none;
 }
 
 /* footer section */

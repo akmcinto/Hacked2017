@@ -49,4 +49,4 @@ console.log(data.getMoonData());
 
 module.export = JSONData;
 
-// http://api.usno.navy.mil/moon/phase?date=today&nump=4
+// Northern Lights stuff: https://www.softservenews.com/gps-aurora-borealis-forecast.html
