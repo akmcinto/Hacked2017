@@ -68,7 +68,25 @@ $(document).ready(function() {
         });
     });
 
+    $("#ring").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = saturn_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
+
     $("#uranus").click(function () {
+        var textBox = document.getElementById("textBox");
+        textBox.innerHTML = uranus_information;
+        $("#textBox").fadeIn("slow", function () {
+            // Animation complete
+            console.log("Did it!");
+        });
+    });
+
+    $("#ring_uranus").click(function () {
         var textBox = document.getElementById("textBox");
         textBox.innerHTML = uranus_information;
         $("#textBox").fadeIn("slow", function () {
