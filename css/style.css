@@ -50,6 +50,12 @@ h1, header a {
     font-size: 36px;
 }
 
+.title-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .topic {
     padding: 30px 0px 50px 0px;
     margin: 0px 0px 100px 0px;
@@ -70,14 +76,20 @@ h1, header a {
     padding: 20px;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
+    align-items:center;
+}
+
+.content p{
+    width:100%;
+}
+
+.content > img {
+    object-fit: contain;
+    width:95%;
 }
 
 .content .title{
     font-size: 24px;
-}
-
-.content *{
-
 }
 
 #solar-wind{
@@ -94,11 +106,10 @@ h1, header a {
 #alerts{
     background: url("../images/space-invaders-2.jpg") center no-repeat;
     background-size: cover;
-
 }
 
 .loader {
-    border: 16px solid #820082;
+    border: 16px solid #FF1F59;
     border-radius: 50%;
     border-top: 16px solid #820082;
     border-bottom: 16px solid #820082;

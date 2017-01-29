@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Script Tutorials" />
-    <title>Responsive website using AngularJS | Script Tutorials</title>
+    <title>Not a Bore</title>
     <meta name="description" content="Responsive website using AngularJS - demo page">
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -43,6 +43,7 @@
     </div>
 </header>
 <div class="main">
+
     <div class="row topic" id="solar-wind">
         <div class="title-row row">
             <h2 class="title">Solar Winds</h2>
@@ -50,8 +51,8 @@
         <div class="content-row row">
             <div class="content">
                 <p class="title">Solar Wind Info</p>
-                <div class="loader"></div>
-                <p id="solarWindInfo1" style="display: none;">this is info</p>
+                <div class="loader" id="solarWindInfo1-loader"></div>
+                <p id="solarWindInfo1" style="display: none;"></p>
             </div>
             <div class="content">
                 <p class="title">Solar Wind Info</p>
@@ -61,18 +62,30 @@
         </div>
     </div>
 
-    <div id="plasmaData" class="plasma">
-        <div id="plasmaDensity"></div>
-        <div id="plasmaSpeed"></div>
-        <div id="plasmaTemperature"></div>
+    <div class="row topic" id="aurora-forecast">
+        <div class="title title-row row">
+            <h2>Aurora Borealis Forecast</h2>
+        </div>
+        <div class="content-row row">
+            <div class="content">
+                <p class="title">Northern Hemisphere</p>
+                <img src="http://services.swpc.noaa.gov/images/aurora-forecast-northern-hemisphere.png">
+            </div>
+            <div class="content">
+                <p class="title">Southern Hemisphere</p>
+                <img src="http://services.swpc.noaa.gov/images/aurora-forecast-southern-hemisphere.png">
+            </div>
+        </div>
     </div>
 
     <div class="row topic" id="alerts">
         <div class="title title-row row">
             <h2 class="title">!!Alerts!!</h2>
+            <div class="loader" id="alerts-content-loader"></div>
         </div>
-        <div id="alerts-content" class="content-row row"></div>
+        <div id="alerts-content" class="content-row row" style="display: none;"></div>
     </div>
+
     <div class="row topic" id="moon">
         <div class="title title-row row">
             <h2 class="title">Moon</h2>

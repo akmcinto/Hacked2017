@@ -1,6 +1,13 @@
 var plasmaurl = 'http://services.swpc.noaa.gov/products/solar-wind/plasma-5-minute.json';
 var alertsurl = 'http://services.swpc.noaa.gov/products/alerts.json';
 
+function unload(idtext) {
+    var loader = idtext + '-loader'
+
+    $(loader).hide();
+    $(idtext).show();
+}
+
 $.getJSON(alertsurl, function(data) {
     $.each(data, function(index, element) {
 
@@ -31,6 +38,7 @@ $.getJSON(alertsurl, function(data) {
             return false;
         }
     });
+    unload('#alerts-content');
 });
 
 // http://stackoverflow.com/questions/8951810/how-to-parse-json-data-with-jquery-javascript
@@ -52,11 +60,12 @@ $.getJSON(plasmaurl, function(data) {
         };
     });
 
-    $(".loader").hide();
-    $('#solarWindInfo1').show();
+    unload('#solarWindInfo1');
 
 });
 
 
 
 $('#solarWindInfo2').html("asdsaddsadsad");
+
+
