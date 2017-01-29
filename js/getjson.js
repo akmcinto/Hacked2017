@@ -70,6 +70,7 @@ $.getJSON(plasmaurl, function(data) {
 $.get(solarforecasturl, function(data) {
     var startB = data.search('B. NOAA Solar Radiation Activity Observation and Forecast')
     var startC = data.search('C. NOAA Radio Blackout Activity and Forecast');
+    var endC = data.length;
 
     var dataB = data.substr(startB + 3, startC - startB);
     var datasB = dataB.split('\n\n');
@@ -87,15 +88,38 @@ $.get(solarforecasturl, function(data) {
 
     var sOut = '<table style="padding:10px; width:90%">';
     sOut += '<thead><tr><td> </td><td>' + datasB[3].substr(14, 6) + '</td><td>' + datasB[3].substr(22, 6) + '</td><td>' + datasB[3].substr(30, 6) + '</td></tr></thead>';
-    sOut += '<tbody><tr><td>' + datasB[3].substr(37, 13) + '</td><td>' + datasB[3].substr(52, 6) + '</td><td>' + datasB[3].substr(60, 6) + '</td><td>' + datasB[3].substr(68, 6) + '</td></tr></tbody></table>';
+    sOut += '<tbody><tr><td>' + datasB[3].substr(37, 13) + '</td><td>' + datasB[3].substr(52, 7) + '</td><td>' + datasB[3].substr(60, 6) + '</td><td>' + datasB[3].substr(68, 6) + '</td></tr></tbody></table>';
     $('#solarWindInfo2').append(sOut);
 
-    // for (d in datasB) {
-    //     $('#solarWindInfo2').append($('<p>', {
-    //             text: datasB[d]
-    //         }
-    //     ));
-    // }
+    $('#solarWindInfo2').append($('<p>', {
+            text: datasB[4]
+        }
+    ));
+
+    var dataC = data.substr(startC + 3, endC - startC);
+    var datasC = dataC.split('\n\n');
+
+    $('#solarForecastTitle2').text(datasC[0]);
+
+    $('#solarWindInfo3').append($('<p>', {
+            text: datasC[1]
+        }
+    ));
+    $('#solarWindInfo3').append($('<p>', {
+            text: datasC[2]
+        }
+    ));
+
+    var sOut = '<table style="padding:10px; width:90%">';
+    sOut += '<thead><tr><td> </td><td>' + datasC[3].substr(14, 6) + '</td><td>' + datasC[3].substr(28, 6) + '</td><td>' + datasC[3].substr(42, 6) + '</td></tr></thead>';
+    sOut += '<tbody><tr><td>' + datasC[3].substr(49, 13) + '</td><td>' + datasC[3].substr(62, 6) + '</td><td>' + datasC[3].substr(76, 6) + '</td><td>' + datasC[3].substr(90, 6) + '</td></tr>';
+    sOut += '<tr><td>' + datasC[3].substr(97, 13) + '</td><td>' + datasC[3].substr(110, 6) + '</td><td>' + datasC[3].substr(124, 6) + '</td><td>' + datasC[3].substr(138, 6) + '</td></tr></tbody></table>';
+    $('#solarWindInfo3').append(sOut);
+
+    $('#solarWindInfo3').append($('<p>', {
+            text: datasC[4]
+        }
+    ));
 }, 'text');
 
 // // http://stackoverflow.com/questions/9669805/how-do-i-animate-though-a-png-sequence-using-jquery-either-by-scrolling-or-trig
