@@ -101,11 +101,12 @@ $.get(solarforecasturl, function(data) {
         }
     ));
     $('#solarWindInfo2').append($('<p>', {
-            text: datasB[2]
+            text: datasB[2],
+            class: 'tabletitle'
         }
     ));
 
-    var sOut = '<table style="padding:10px; width:90%">';
+    var sOut = '<table>';
     sOut += '<thead><tr><td> </td><td>' + datasB[3].substr(14, 6) + '</td><td>' + datasB[3].substr(22, 6) + '</td><td>' + datasB[3].substr(30, 6) + '</td></tr></thead>';
     sOut += '<tbody><tr><td>' + datasB[3].substr(37, 13) + '</td><td>' + datasB[3].substr(52, 7) + '</td><td>' + datasB[3].substr(60, 6) + '</td><td>' + datasB[3].substr(68, 6) + '</td></tr></tbody></table>';
     $('#solarWindInfo2').append(sOut);
@@ -125,11 +126,12 @@ $.get(solarforecasturl, function(data) {
         }
     ));
     $('#solarWindInfo3').append($('<p>', {
-            text: datasC[2]
+            text: datasC[2],
+            class: 'tabletitle'
         }
     ));
 
-    var sOut = '<table style="padding:10px; width:90%">';
+    var sOut = '<table>';
     sOut += '<thead><tr><td> </td><td>' + datasC[3].substr(14, 6) + '</td><td>' + datasC[3].substr(28, 6) + '</td><td>' + datasC[3].substr(42, 6) + '</td></tr></thead>';
     sOut += '<tbody><tr><td>' + datasC[3].substr(49, 13) + '</td><td>' + datasC[3].substr(62, 6) + '</td><td>' + datasC[3].substr(76, 6) + '</td><td>' + datasC[3].substr(90, 6) + '</td></tr>';
     sOut += '<tr><td>' + datasC[3].substr(97, 13) + '</td><td>' + datasC[3].substr(110, 6) + '</td><td>' + datasC[3].substr(124, 6) + '</td><td>' + datasC[3].substr(138, 6) + '</td></tr></tbody></table>';
