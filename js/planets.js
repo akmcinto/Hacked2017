@@ -245,7 +245,7 @@ $(document).ready(function() {
 
             });
         }else{
-            textBox.innerHTML = naptune_information;
+            textBox.innerHTML = neptune_information;
             $("#textBox").fadeIn("slow", function () {
                 // Animation complete
 
