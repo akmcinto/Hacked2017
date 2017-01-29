@@ -7,13 +7,13 @@ $.getJSON(alertsurl, function(data) {
         for (var d in datas) {
             $('#alerts').append($('<p>', {
                     text: datas[d]
-                }
-            ))
-        }
-        if (index == 2) {
-            return false;
-        }
-    });
+}
+))
+}
+if (index == 2) {
+    return false;
+}
+});
 });
 
 // http://stackoverflow.com/questions/8951810/how-to-parse-json-data-with-jquery-javascript
@@ -21,18 +21,18 @@ $.getJSON(plasmaurl, function(data) {
     $.each(data, function(index, element) {
         if (index == 2) {
             var datas = element.toString().split(',');
-            $('#plasmaDensity').append($('<p>', {
+            $('#solarWindInfo1').html($('<p>', {
                     text: "Density: " + datas[1]
                 }
-            ))
-            $('#plasmaSpeed').append($('<p>', {
+            )).append($('<p>', {
                     text: "Speed: " + datas[2]
                 }
-            ))
-            $('#plasmaTemperature').append($('<p>', {
+            )).append($('<p>', {
                     text: "Temperature: " + datas[3]
                 }
             ))
         };
     });
 });
+
+$('#solarWindInfo2').html("asdsaddsadsad");
