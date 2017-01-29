@@ -3,20 +3,25 @@ var alertsurl = 'http://services.swpc.noaa.gov/products/alerts.json';
 
 $.getJSON(alertsurl, function(data) {
     $.each(data, function(index, element) {
+
         var datas = JSON.parse(JSON.stringify(element))["message"].split('\n\r');
-        for (var d in datas) {
-            if (d == 1) {
-                $('#alerts').append($('<h2>', {
+        var idname = "alert" + index;
+        // http://stackoverflow.com/questions/11905276/using-variables-in-place-of-id-names-in-jquery
+        $('#alerts').append("<div id='"+idname+"' class='content'></div>");
+        for (var d in datas)
+        {
+            if (d == 0) {
+                $('#' + idname).append($('<h2>', {
                         text: datas[d]
                     }
                 ))
-            } else if (d == 2) {
-                $('#alerts').append($('<h1>', {
+            } else if (d == 1) {
+                $('#' + idname).append($('<h1>', {
                         text: datas[d]
                     }
                 ))
             } else {
-                $('#alerts').append($('<p>', {
+                $('#' + idname).append($('<p>', {
                         text: datas[d]
                     }
                 ))
