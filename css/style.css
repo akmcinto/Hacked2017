@@ -1,4 +1,9 @@
-﻿html {
+﻿/*
+Most of this was taken from https://www.airpair.com/angularjs
+and then expanded on
+ */
+
+html {
     font-family: sans-serif;
     height:100%;
     overflow-x:hidden;
@@ -15,6 +20,7 @@ body {
     height:100%;
     width:100%;
 
+    /*http://lea.verou.me/css3patterns/#starry-night*/
     background-image:
             radial-gradient(white, rgba(255,255,255,.2) 2px,   transparent 40px),
             radial-gradient(white, rgba(255,255,255,.15) 1px,   transparent 30px),
