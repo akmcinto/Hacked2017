@@ -1,6 +1,6 @@
 ﻿html {
     font-family: sans-serif;
-    min-height:100%;
+    height:100%;
     overflow-x:hidden;
     overflow-y:scroll;
     position:relative;
@@ -12,7 +12,7 @@ body {
     color:#FFF;
     font-weight:100;
     margin:0;
-    min-height:100%;
+    height:100%;
     width:100%;
 
     background-image:
@@ -24,26 +24,34 @@ body {
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
+.main {
+    height: 100%;
+}
+
 a img {
     border:none;
 }
 
-#home-link:hover{
-    text-decoration:none;
-}
-
-header a, #home-link:hover{
-    text-decoration:none;
-    color: #fff;
-}
-
-h1, header a {
-    font-size:3.5em;
-    font-weight:100;
-}
 
 .title {
     text-align: center;
+}
+
+.tabletitle {
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+table {
+    max-width: 90%;
+    margin: 10px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+td {
+    padding: 2px 10px;
 }
 
 .topic .title-row .title {
@@ -57,7 +65,8 @@ h1, header a {
 }
 
 .topic {
-    padding: 30px 0px 50px 0px;
+    min-height: 100%;
+    /*padding: 30px 0px 50px 0px;*/
     margin: 0px 0px 100px 0px;
 }
 
@@ -88,10 +97,9 @@ h1, header a {
     width:95%;
 }
 
-.doublewide {
-    width: 60% !important;
+.wider {
+    width: 45% !important;
 }
-
 .content .title{
     font-size: 24px;
 }
@@ -108,8 +116,14 @@ h1, header a {
 }
 
 #alerts{
-    background: url("../images/space-invaders-2.jpg") center no-repeat;
+    background: url("../images/spaceinvaders.png") center no-repeat;
     background-size: cover;
+    margin: 0;
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
 }
 
 .loader {
@@ -134,7 +148,7 @@ h1, header a {
 }
 
 p {
-    font-size:1.5em;
+    font-size: 1em;
 }
 input,textarea {
     -webkit-appearance:none;
@@ -175,7 +189,7 @@ input:focus,textarea:focus {
     margin:0 auto;
     max-width:1420px;
     overflow:hidden;
-    padding:0 50px;
+    padding:10px 50px;
     position:relative;
     width:100%;
 }
@@ -188,11 +202,28 @@ input:focus,textarea:focus {
 }
 
 /* header section */
-header {
-    height:110px;
+/*header {*/
+    /*height:110px;*/
+/*}*/
+
+
+home-link:hover{
+    text-decoration:none;
 }
+
+header a, #home-link:hover{
+    text-decoration:none;
+    color: #fff;
+}
+
+h1, header a {
+    font-size:3.5em;
+    font-weight:100;
+}
+
 header .wrap {
     height:100%;
+
 }
 header .logo {
     margin-top:1px;

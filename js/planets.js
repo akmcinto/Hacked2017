@@ -117,7 +117,7 @@ $(document).ready(function() {
 
 
 //not sure where to put this
-var sun_information = "<p> <font color='white'>The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma," +
+var sun_information = "<p>The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma," +
     " with internal convective motion that generates a magnetic field via a dynamo process." +
     " It is by far the most important source of energy for life on Earth. Its diameter is about 109 times that of Earth, " +
     "and its mass is about 330,000 times that of Earth, accounting for about 99.86% of the total mass of the Solar System." +
@@ -130,7 +130,7 @@ var sun_information = "<p> <font color='white'>The Sun is the star at the center
     "It is thought that almost all stars form by this process.</p> <p>More information can be found " +
     "<a href='https://en.wikipedia.org/wiki/Sun'>here.</a></p>";
 
-var mercury_information = "<p> <font color='white'>Mercury is the smallest and innermost planet in the Solar System. " +
+var mercury_information = "<p>Mercury is the smallest and innermost planet in the Solar System. " +
     "Its orbital period around the Sun of 88 days is the shortest of all the planets in the Solar System. " +
     "It is named after the Roman deity Mercury, the messenger to the gods. Like Venus, Mercury orbits the Sun within Earth's orbit as an inferior planet, " +
     "so it can only be seen visually in the morning or the evening sky, and never exceeds 28° away from the Sun. " +
@@ -144,7 +144,7 @@ var mercury_information = "<p> <font color='white'>Mercury is the smallest and i
     "An observer on Mercury would therefore see only one day every two years.</p><p>More information can be found <a href='https://en.wikipedia.org/wiki/Mercury_(planet)'>" +
     "here.</a></p>";
 
-var earth_information = "<p> <font color ='white'>Earth, otherwise known as the world, is the third planet from the Sun and " +
+var earth_information = "<p>Earth, otherwise known as the world, is the third planet from the Sun and " +
     "the only object in the Universe known to harbor life. It is the densest planet in the Solar System and the largest of the four terrestrial planets. " +
     "According to radiometric dating and other sources of evidence, Earth formed about 4.54 billion years ago." +
     " Earth's gravity interacts with other objects in space, especially the Sun and the Moon, Earth's only natural satellite. " +
@@ -159,7 +159,7 @@ var earth_information = "<p> <font color ='white'>Earth, otherwise known as the 
     " a liquid outer core that generates the Earth's magnetic field, and a convecting mantle that drives plate tectonics.</p>" +
     "More information can be found <a href='https://en.wikipedia.org/wiki/Earth'>here.</a></p>";
 
-var venus_information = "<p> <font color='white'>Venus is the second planet from the Sun, orbiting it every 224.7 Earth days." +
+var venus_information = "<p>Venus is the second planet from the Sun, orbiting it every 224.7 Earth days." +
     " It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets. " +
     "It has no natural satellite. It is named after the Roman goddess of love and beauty. " +
     "It is the second-brightest natural object in the night sky after the Moon, reaching an apparent magnitude of −4.6, bright enough to cast shadows." +
@@ -174,7 +174,7 @@ var venus_information = "<p> <font color='white'>Venus is the second planet from
     "It may have had water oceans in the past, but these would have vaporized as the temperature rose due to a runaway greenhouse effect.</p>" +
     "<p>More information can be found <a href='https://en.wikipedia.org/wiki/Venus'>here.</a></p></p>";
 
-var mars_information = "<p><font color='white'>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, " +
+var mars_information = "<p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, " +
     "after Mercury. Named after the Roman god of war, it is often referred to as the \"Red Planet\"" +
     " because the iron oxide prevalent on its surface gives it a reddish appearance." +
     " Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the valleys," +
@@ -185,7 +185,7 @@ var mars_information = "<p><font color='white'>Mars is the fourth planet from th
     "Mars has two moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids," +
     " similar to 5261 Eureka, a Mars trojan.</p> <p>More information can be found <a href='https://en.wikipedia.org/wiki/Mars'>here.</a></p>";
 
-var jupitar_information = "<p><font color='white'>Jupiter is the fifth planet from the Sun and the largest in the Solar System. " +
+var jupitar_information = "<p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. " +
     "It is a giant planet with a mass one-thousandth that of the Sun, but two and a half times that of all the other planets in the Solar System combined. " +
     "Jupiter is a gas giant, along with Saturn, with the other two giant planets, Uranus and Neptune, being ice giants. " +
     "Jupiter was known to astronomers of ancient times. The Romans named it after their god Jupiter." +
@@ -201,7 +201,7 @@ var jupitar_information = "<p><font color='white'>Jupiter is the fifth planet fr
     "Surrounding Jupiter is a faint planetary ring system and a powerful magnetosphere.</p>" +
     "<p>More information can be found <a href='https://en.wikipedia.org/wiki/Jupiter'>here.</a></p>";
 
-var saturn_information = "<p><font color='white'>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. " +
+var saturn_information = "<p>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. " +
     "It is a gas giant with an average radius about nine times that of Earth." +
     " Although it has only one-eighth the average density of Earth, with its larger volume Saturn is just over 95 times more massive." +
     " Saturn is named after the Roman god of agriculture; its astronomical symbol (♄) represents the god's sickle. " +
@@ -212,7 +212,7 @@ var saturn_information = "<p><font color='white'>Saturn is the sixth planet from
     " but has a magnetic moment 580 times that of Earth due to Saturn's larger size.</p> <p>More information can be found " +
     "<a href='https://en.wikipedia.org/wiki/Saturn'>here.</a></p>";
 
-var uranus_information = "<p><font color='white'>Uranus is the seventh planet from the Sun. " +
+var uranus_information = "<p>Uranus is the seventh planet from the Sun. " +
     "It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. " +
     "Uranus is similar in composition to Neptune, and both have different bulk chemical composition from that of the " +
     "larger gas giants Jupiter and Saturn. For this reason, scientists often classify Uranus and Neptune as \"ice giants\" to" +
@@ -223,7 +223,7 @@ var uranus_information = "<p><font color='white'>Uranus is the seventh planet fr
     " The interior of Uranus is mainly composed of ices and rock.</p><p>More information can be found " +
     "<a href='https://en.wikipedia.org/wiki/Uranus'>here.</a></p>";
 
-var neptune_information = "<p><font color='white'>Neptune is the eighth and farthest known planet from the Sun in the Solar System. " +
+var neptune_information = "<p>Neptune is the eighth and farthest known planet from the Sun in the Solar System. " +
     "In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. " +
     "Neptune is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus, which is 15 times the mass of Earth and " +
     "slightly larger than Neptune. Neptune orbits the Sun once every 164.8 years at an average distance of 30.1 astronomical units (4.50×109 km)." +
@@ -236,7 +236,7 @@ var neptune_information = "<p><font color='white'>Neptune is the eighth and fart
     "very small apparent size, making it challenging to study with Earth-based telescopes.</p>" +
     "<p>More information can be found <a href='https://en.wikipedia.org/wiki/Neptune'>here.</a></p>";
 
-var pluto_information = "<p><font color='white'>Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, " +
+var pluto_information = "<p>Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, " +
     "a ring of bodies beyond Neptune. It was the first Kuiper belt object to be discovered. " +
     "Pluto was discovered by Clyde Tombaugh in 1930 and was originally considered to be the ninth planet from the Sun. " +
     "After 1992, its planethood was questioned following the discovery of several objects of similar size in the Kuiper belt. " +
