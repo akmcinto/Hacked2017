@@ -3,11 +3,16 @@ var alertsurl = 'http://services.swpc.noaa.gov/products/alerts.json';
 
 $.getJSON(alertsurl, function(data) {
     $.each(data, function(index, element) {
-        // var datas = element.toString().split(',');
-        $('#alerts').append($('<p>', {
-                text: JSON.stringify(element)
-            }
-        ))
+        var datas = JSON.parse(JSON.stringify(element))["message"].split('\n');
+        for (var d in datas) {
+            $('#alerts').append($('<p>', {
+                    text: datas[d]
+                }
+            ))
+        }
+        if (index == 2) {
+            return false;
+        }
     });
 });
 
