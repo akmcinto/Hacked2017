@@ -18,42 +18,41 @@
     <script src="../js/app.js"></script>
     <script src="../js/controllers.js"></script>
     <script src="../js/getjson.js"></script>
+
+    <!---Bootstraps--->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 </head>
 <body>
-    <header>
-        <div class="wrap">
-            <!-- logo -->
-            <a href="#!"><img class="logo" src="../images/logo.png" /></a>
-
-            <!-- navigation menu -->
-            <nav>
-                <ul>
-                    <li><a id="workBtn" href="#!/" ng-class="{activeSmall:part == 'projects'}" >Our Projects</a></li>
-                    <li><a id="privacyBtn" href="./pages/privacy.html" ng-class="{activeSmall:part == 'privacy'}">Privacy &amp; Terms</a></li>
-                    <li><a id="aboutBtn" href="#!/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
-                    <li style="margin-right:0px"><a id="contactBtn" class="active" href="javascript: void(0)" ng-click="showForm()">Contact Us</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="wrap">
+        <!-- logo -->
+        <a href="#!">Not a bore-alis</a>
+        <!-- navigation menu -->
+        <nav>
+            <ul>
+                <li><a id="workBtn" href="#!/" ng-class="{activeSmall:part == 'projects'}" >Our Projects</a></li>
+                <li><a id="privacyBtn" href="#!/privacy" ng-class="{activeSmall:part == 'privacy'}">Privacy &amp; Terms</a></li>
+                <li><a id="aboutBtn" href="#!/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
+                <li style="margin-right:0px"><a id="contactBtn" class="active" href="javascript: void(0)" ng-click="showForm()">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="main">
+    <div class="row topic" id="solar-wind">
+        <div class="title title-row row">
+            <h2>Solar Winds</h2>
         </div>
-    </header>
-
-    <!-- contact us form -->
-    <div class="paddRow contactRow">
-        <div class="wrap">
-            <div class="head">Contact Us</div>
-            <img class="close" src="../images/close.png" ng-click="closeForm()" />
-            <form ng-submit="save()" class="contactForm" name="form" ng-hide="loaded">
-                <input class="input" required="required" type="text" name="name" placeholder="your name" ng-model="message.name" />
-                <input class="input email" required="required" type="email" name="email" value="" placeholder="your email" ng-model="message.email" /><br />
-                <textarea class="textarea" rows="5" required="required" placeholder="your message" ng-model="message.text" ></textarea>
-                <button class="btn green">send message</button>
-            </form>
-
-            <!-- contact us form response messages -->
-            <div ng-show="process" style="text-align:center">
-                <img class="loader" src="../images/loader.png" />
+        <div class="content-row row">
+            <div class="content">
+                <p class="title">this is info</p>
+                <p>this is info</p>
             </div>
-            <div ng-show="success"><p>Your message has been sent, thank you.</p></div>
+            <div class="content">
+                <p class="title">this is info</p>
+                <p>this is info and I am now tying to see what happens when I write things
+                    and I will contintue to write things and see what heppens</p>
+            </div>
         </div>
     </div>
 
@@ -65,12 +64,23 @@
 
     <div id="alerts"></div>
 
-    <div id="windData">Solar Winds</div>
-
-    <!-- main content -->
-    <div style="position:relative">
-        <div style="width:100%" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+    <div class="row topic" id="moon">
+        <div class="title title-row row">
+            <h2>Moon</h2>
+        </div>
+        <div class="content-row row">
+            <div class="content">
+                <p class="title">this is info</p>
+                <p>this is info</p>
+            </div>
+            <div class="content">
+                <p class="title">this is info</p>
+                <p>this is info and I am now tying to see what happens when I write things
+                    and I will contintue to write things and see what heppens</p>
+            </div>
+        </div>
     </div>
+</div>
 
 </body>
 </html>

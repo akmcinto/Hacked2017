@@ -1,0 +1,31 @@
+{
+  "error":false,
+  "apiversion":"2.0.0",
+  "year":2017,
+  "month":1,
+  "day":28,
+  "numphases":4,
+  "datechanged":false,
+  "phasedata":[
+    {
+      "phase":"New Moon",
+      "date":"2017 Jan 28",
+      "time":"00:07"
+    },
+    {
+      "phase":"First Quarter",
+      "date":"2017 Feb 04",
+      "time":"04:19"
+    },
+    {
+      "phase":"Full Moon",
+      "date":"2017 Feb 11",
+      "time":"00:33"
+    },
+    {
+      "phase":"Last Quarter",
+      "date":"2017 Feb 18",
+      "time":"19:33"
+    }
+  ]
+}
