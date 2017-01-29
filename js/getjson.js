@@ -55,17 +55,20 @@ $.getJSON(plasmaurl, function(data) {
 });
 
 $.get(solarforecasturl, function(data) {
-    // $('#solarWindInfo2').text(data)
-    // var datas = data.split('  ');
-    // $('#solarWindInfo2').text(data.search('B. NOAA Solar Radiation Activity Observation and Forecast'))
-    // for (var d in datas) {
-    //     // if (datas[d] == 'B. NOAA Solar Radiation Activity Observation and Forecast') {
-    //         $('#solarWindInfo2').append(datas[d] + '\n')
-    //     // }
-    // }
     var startB = data.search('B. NOAA Solar Radiation Activity Observation and Forecast')
     var startC = data.search('C. NOAA Radio Blackout Activity and Forecast');
-    $('#solarWindInfo2').text(data.substr(startB, startC - 1));
+
+    var dataB = data.substr(startB + 3, startC - startB);
+    var datasB = dataB.split('\n\n');
+
+    $('#solarForecastTitle1').text(datasB[0]);
+
+    // for (d in datasB) {
+    //     $('#solarWindInfo2').append($('<p>', {
+    //             text: datasB[d]
+    //         }
+    //     ));
+    // }
 }, 'text');
 
 // // http://stackoverflow.com/questions/9669805/how-do-i-animate-though-a-png-sequence-using-jquery-either-by-scrolling-or-trig
