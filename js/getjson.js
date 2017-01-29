@@ -1,4 +1,5 @@
 var plasmaurl = 'http://services.swpc.noaa.gov/products/solar-wind/plasma-5-minute.json';
+var moonurl = 'http://api.usno.navy.mil/moon/phase?date=today&nump=4';
 var alertsurl = 'http://services.swpc.noaa.gov/products/alerts.json';
 
 $.getJSON(alertsurl, function(data) {
@@ -48,6 +49,23 @@ $.getJSON(plasmaurl, function(data) {
                     text: "Temperature: " + datas[3]
                 }
             ))
+        };
+    });
+});
+
+$.getJSON(moonurl, function(data) {
+    $.each(data, function(key, value) {
+        if (key == "phasedata") {
+            var moonInfo = "";
+            value.forEach(function(phaseObj) {
+               moonInfo = phaseObj["phase"] + ": " + phaseObj["date"];
+
+                $('#moonPhaseInfo').append($('<p>', {
+                        text: moonInfo
+                    }
+                ))
+            });
+
         };
     });
 });

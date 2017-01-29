@@ -34,9 +34,8 @@
         <!-- navigation menu -->
         <nav>
             <ul>
-                <li><a id="workBtn" href="#!/" ng-class="{activeSmall:part == 'projects'}" >Our Projects</a></li>
-                <li><a id="privacyBtn" href="#!/privacy" ng-class="{activeSmall:part == 'privacy'}">Privacy &amp; Terms</a></li>
-                <li><a id="aboutBtn" href="#!/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
+                <li><a id="planetBtn" href="../web/planets.html" ng-class="{activeSmall:part == 'privacy'}">Planets</a></li>
+                <li><a id="aboutBtn" href="../web/about.html" ng-class="{activeSmall:part == 'about'}">About</a></li>
                 <li style="margin-right:0px"><a id="contactBtn" href="javascript: void(0)" ng-click="showForm()">Contact Us</a></li>
             </ul>
         </nav>
@@ -85,13 +84,13 @@
         </div>
         <div class="content-row row">
             <div class="content">
-                <p class="title">this is info</p>
-                <p>this is info</p>
+                <img src="http://www.webweaver.nu/clipart/img/nature/planets/gm2.gif" height="222" width="222">
             </div>
+        </div>
+        <div class="content-row row">
             <div class="content">
-                <p class="title">this is info</p>
-                <p>this is info and I am now tying to see what happens when I write things
-                    and I will contintue to write things and see what heppens</p>
+                <p id="moonPhaseInfo"></p>
+
             </div>
         </div>
     </div>
