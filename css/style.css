@@ -24,23 +24,7 @@ body {
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
-a img {
-    border:none;
-}
 
-#home-link:hover{
-    text-decoration:none;
-}
-
-header a, #home-link:hover{
-    text-decoration:none;
-    color: #fff;
-}
-
-h1, header a {
-    font-size:3.5em;
-    font-weight:100;
-}
 
 .title {
     text-align: center;
@@ -186,9 +170,26 @@ input:focus,textarea:focus {
 /* header section */
 header {
     height:110px;
+
 }
+
+home-link:hover{
+    text-decoration:none;
+}
+
+header a, #home-link:hover{
+    text-decoration:none;
+    color: #fff;
+}
+
+h1, header a {
+    font-size:3.5em;
+    font-weight:100;
+}
+
 header .wrap {
     height:100%;
+
 }
 header .logo {
     margin-top:1px;
