@@ -10,30 +10,40 @@
     <!-- add javascripts -->
     <script src="../js/jquery-2.0.3.min.js"></script>
     <script src="../js/planets.js"></script>
-
-
-
+    <script src="../js/style-control.js"></script>
 </head>
 <body id="background_planets">
-<div id=title_text align='left'><p><font color='white' font size="250px">The Planets</font></p></div>
-
-<div class="planets">
-    <div id="sun" ></div> <!--onclick="sunClicked()" -->
-    <div id="mercury" ></div>
-    <div id="venus" ></div>
-    <div id="earth" ></div>
-    <div id="mars" ></div>
-    <div id="jupitar" ></div>
-    <div id="saturn" ></div>
-    <div id="ring"></div>
-    <div id="uranus" ></div>
-    <div id="ring_uranus"></div>
-    <div id="neptune" ></div>
-    <div id="pluto" ></div>
+<header>
+    <div class="wrap">
+        <!-- logo -->
+        <a href="index.html" id="home-link">Not A Bore-alis</a>
+        <!-- navigation menu -->
+        <nav>
+            <ul>
+                <li><a id="workBtn" href="planets.html" ng-class="{activeSmall:part == 'projects'}" >Planets</a></li>
+                <li><a id="aboutBtn" href="#!/about" ng-class="{activeSmall:part == 'about'}">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--<div id=title_text align='left'><p><font color='white' font size="250px">The Planets</font></p></div>-->
+<div class="row" id="textBox-row">
+    <div id="textBox"></div>
 </div>
-
-<div id="textBox"></div>
-</body>
+<div class="planets row">
+    <div class="planet " id="sun" ></div> <!--onclick="sunClicked()" -->
+    <div class="planet " id="mercury" ></div>
+    <div class="planet " id="venus" ></div>
+    <div class="planet " id="earth" ></div>
+    <div class="planet " id="mars" ></div>
+    <div class="planet " id="jupitar" ></div>
+    <div class="planet " id="saturn" ></div>
+    <div class="planet hide" id="ring"></div>
+    <div class="planet " id="uranus" ></div>
+    <div class="planet hide" id="ring_uranus"></div>
+    <div class="planet" id="neptune" ></div>
+    <div class="planet" id="pluto" ></div>
+</div>
 
 
 </body>
