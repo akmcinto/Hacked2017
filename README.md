@@ -19,7 +19,7 @@ This website was created for the 2017 HackED hackathon.  Within 24 hours we
 aimed to deploy a website that would provide data on space weather and other 
 celestial phenomena.
 
-Website URL: https://d1swlf98bwhf6n.cloudfront.net/
+Website URL: http://d1swlf98bwhf6n.cloudfront.net/
 
 Sources:
 Most data from: http://services.swpc.noaa.gov/  
